@@ -14,7 +14,7 @@ esac
 # Setup Prompt
 autoload -U colors && colors
 setopt PROMPT_SUBST
-PS1='$(s2aprompt)$(git_prompt)(%{$fg[green]%}$SYSTEM_ICON %m: %{$reset_color%}%{$fg[blue]%}%~%{$reset_color%})
+PS1='$(git_prompt)(%{$fg[green]%}$SYSTEM_ICON %m: %{$reset_color%}%{$fg[blue]%}%~%{$reset_color%})
 %# '
 
 # Set vi as the editor
