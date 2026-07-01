@@ -5,8 +5,10 @@
 case "$OSTYPE" in
   darwin*)
     export SYSTEM_ICON=""
+  ;;
   *)
     export SYSTEM_ICON="🐧"
+  ;;
 esac
 
 # Setup Prompt
