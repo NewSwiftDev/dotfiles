@@ -14,7 +14,16 @@ esac
 # Setup Prompt
 autoload -U colors && colors
 setopt PROMPT_SUBST
-PS1='$(git_prompt)(%{$fg[green]%}$SYSTEM_ICON %n@%m: %{$reset_color%}%{$fg[blue]%}%~%{$reset_color%})
+NORMAL_USER="mark.honomichl"
+user_host_segment() {
+  if [[ "$USER" != "$NORMAL_USER" ]]; then
+    echo "%{$fg[green]%}$SYSTEM_ICON %n@%m: %{$reset_color%}"
+  else
+    echo "%{$fg[green]%}$SYSTEM_ICON %m: %{$reset_color%}"
+  fi
+}
+
+PS1='$(git_prompt)$(user_host_segment)%{$fg[blue]%}%~%{$reset_color%})
 %# '
 
 # Set vi as the editor
