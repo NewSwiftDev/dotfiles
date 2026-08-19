@@ -1,0 +1,34 @@
+## Configuration options can be found here
+## https://ghostty.org/docs/config/reference
+
+# Theme
+theme = dark:dracula+,light:Xcode Light 
+# theme = dracula+
+# theme = Xcode Light
+
+# Quit when the last window is closed
+quit-after-last-window-closed = true
+
+# Don't ask to close
+confirm-close-surface = false
+
+# Copy on Select
+copy-on-select = clipboard
+
+# Fixes ssh backspace
+shell-integration-features = ssh-env
+
+# Open new windows in the Home directory
+# window-inherit-working-directory = false
+working-directory = home
+gtk-single-instance = false
+
+# Font
+font-family = JetBrains Mono
+font-size = 14
+font-thicken = true
+
+background-opacity = 0.95
+background-blur = 16
+
+clipboard-paste-protection = false
