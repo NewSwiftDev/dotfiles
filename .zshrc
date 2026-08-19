@@ -27,4 +27,6 @@ if [ -d ~/.functions ]; then
     done
 fi
 
+# Paths
+export PATH=/opt/homebrew/bin:$PATH
 
