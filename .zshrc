@@ -28,5 +28,6 @@ if [ -d ~/.functions ]; then
 fi
 
 # Paths
-export PATH=/opt/homebrew/bin:$PATH
+[[ -d "/opt/homebrew/bin" ]] && export PATH=/opt/homebrew/bin:$PATH
+
 
